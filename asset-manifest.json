@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react_ecommerce/static/css/main.f5908813.css",
-    "main.js": "/react_ecommerce/static/js/main.073f2874.js",
-    "static/js/787.c875205c.chunk.js": "/react_ecommerce/static/js/787.c875205c.chunk.js",
-    "index.html": "/react_ecommerce/index.html",
-    "main.f5908813.css.map": "/react_ecommerce/static/css/main.f5908813.css.map",
-    "main.073f2874.js.map": "/react_ecommerce/static/js/main.073f2874.js.map",
-    "787.c875205c.chunk.js.map": "/react_ecommerce/static/js/787.c875205c.chunk.js.map"
+    "main.css": "/marti-midna.github.io/react_ecommerce/static/css/main.f5908813.css",
+    "main.js": "/marti-midna.github.io/react_ecommerce/static/js/main.0c63ef7a.js",
+    "static/js/787.c875205c.chunk.js": "/marti-midna.github.io/react_ecommerce/static/js/787.c875205c.chunk.js",
+    "index.html": "/marti-midna.github.io/react_ecommerce/index.html",
+    "main.f5908813.css.map": "/marti-midna.github.io/react_ecommerce/static/css/main.f5908813.css.map",
+    "main.0c63ef7a.js.map": "/marti-midna.github.io/react_ecommerce/static/js/main.0c63ef7a.js.map",
+    "787.c875205c.chunk.js.map": "/marti-midna.github.io/react_ecommerce/static/js/787.c875205c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5908813.css",
-    "static/js/main.073f2874.js"
+    "static/js/main.0c63ef7a.js"
   ]
 }
