@@ -1,13 +1,15 @@
 import { useState } from 'react';
 
-export const Header = ({search , changing}) => {
+export const Header = (props) => {
 
-  // const [search , setSearch] = useState('');
+  const [search , setSearch] = useState('');
 
-  //   const changing = (event) => {
-  //   setSearch(event.target.value);
-  //   console.log(event);
-  // }
+    const changing = (event) => {
+    const value = event.target.value;
+    setSearch(value);
+    console.log(event);
+    props.searching(value);
+  }
 
     return (
       <header>

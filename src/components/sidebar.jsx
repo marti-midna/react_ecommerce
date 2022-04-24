@@ -4,6 +4,7 @@ const mock = ["category 1", "category 2", "category 3"];
 
 export const Sidebar = (props) => {
   const [categories, setCategories] = useState(mock);
+  const [current, setCurrent] = useState('');
 
   const getData = async () => {
     const response = await fetch(
@@ -30,7 +31,7 @@ export const Sidebar = (props) => {
     event.preventDefault(); //evita il comportamento predef del link cioè aprire una nuova pagina
     console.log('bitch hai cliccato : ', category);
     props.catSelection(category);
-
+    setCurrent(category);
   }
 
   return (
@@ -39,7 +40,7 @@ export const Sidebar = (props) => {
       <ul>
         {categories.map((item, index) => (
           <li key={index}>
-            <a href={item} onClick={(event) => clicked(event, item)}>{item}</a>
+            <a href={item} className={item === current ? "active" : ""} onClick={(event) => clicked(event, item)}>{item}</a>
           </li>
         ))}
       </ul>

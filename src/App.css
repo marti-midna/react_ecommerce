@@ -67,6 +67,10 @@ aside a:visited {
 aside a:hover {
   color: rgb(192, 103, 2);
 }
+
+aside ul li .active {
+  color: rgb(192, 103, 2);
+}
 /* END c a t e g o r i e s - a s i d e */
 
 /* START u n d e r - n a v  */

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 // const products = ["prodotto 1", "prodotto 2", "prodotto 3"];
 
-export const List = ({category}) => {
+export const List = ({category, search}) => {
 
     const [source, setSource] = useState([]);
     const [products, setProducts] = useState([]);
@@ -31,11 +31,23 @@ export const List = ({category}) => {
           } else {
             return product.category === category;
           }
-        });
+        })
+        .filter((product) => 
+        product.title.toLowerCase().includes(search.toLowerCase())
+        
+      );
       setProducts(filtered);
       console.log(category, filtered);
 
-    }, [category]);
+    }, [category, search]);
+
+    // useEffect(() => {
+    //   const filtered = source.filter((product) => 
+    //     product.title.toLowerCase().includes(search.toLowerCase())
+        
+    //   );
+    //   setProducts(filtered);
+    // } , [search])
       
   return (
     <section>
